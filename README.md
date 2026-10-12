@@ -1,10 +1,27 @@
-# sora-2-pro-api-ja — AI API ゲートウェイ (日本語)
+# Sora 2 Pro API (`sora-2-pro`)
 
-> **One OpenAI-compatible key, 300+ models** · image2.5 **$0.0085/image** · Seedance 2.0 Mini **$0.01056/sec** · LLM from **$0.0228 / M tokens** · $1 minimum top-up.
+<!-- conv-kit:v1 -->
 
-**[料金を見る](https://go.apimart.ai/k-6ff06b)** · **[APIキーを取得](https://go.apimart.ai/k-2e052a)**
+<p align="center">
+  <img src="assets/badges/price.svg" alt="observed unit price"> <img src="assets/badges/billing.svg" alt="billing model"> <img src="assets/badges/compat.svg" alt="OpenAI-compatible endpoint">
+</p>
 
-sora-2-pro-api-ja は 1 つの `base_url` と 1 つのキーで 300+ モデルに接続します。USD 決済・従量課金・最低 $1 チャージ。
+<p align="center">
+  <img src="assets/01-product-ad-ceramic-mug-thumb.jpg" width="820" alt="Sora 2 Pro (sora-2-pro) output preview generated through APIMart">
+</p>
+
+> per generated second — one OpenAI-compatible endpoint at `https://api.apimart.ai/v1`, no monthly plan required. *(observed 2026-10-12)*
+
+**[Get an API key](https://go.apimart.ai/k-2e052a)** · **[Live pricing](https://go.apimart.ai/k-81a9c6)** · **[Model page](https://go.apimart.ai/k-dd7e2b)** · [⚡ 60-second quickstart](#quickstart)
+
+**Why teams call Sora 2 Pro (`sora-2-pro`) through APIMart**
+
+- **Per-second billing, by resolution.** A job is charged for the seconds it actually generates at the resolution you picked — 480P, 720P and 1080P are priced separately, so a 5-second draft costs a fraction of a 15-second 1080P master.
+- **Text-to-video and image-to-video on one id.** The same `sora-2-pro` endpoint takes a prompt, a first frame, or first and last frames; reference video and reference audio are accepted where the route supports them.
+- **The charge comes back in the response.** Every completed task reports the amount billed (`cost` / `credits_cost`), so a spend number is read per call instead of guessed at month end. A failed task is refunded.
+- **Async by design.** Submit, take the `task_id`, poll `GET /v1/tasks/{id}` — batching and retries are ordinary queue work, not a bespoke integration.
+
+<!-- /conv-kit:v1 -->
 
 ## Published unit prices (snapshot 2026-09-28)
 
